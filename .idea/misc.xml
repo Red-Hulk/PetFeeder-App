@@ -4,6 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Tristan/Documents/AndroidAppBP6/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Tristan/Documents/AndroidAppBP6/app/src/main/res/layout/fragment_camera.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Tristan/Documents/AndroidAppBP6/app/src/main/res/layout/fragment_feed_time.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/Tristan/Documents/AndroidAppBP6/app/src/main/res/layout/fragment_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Tristan/Documents/AndroidAppBP6/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Tristan/Documents/AndroidAppBP6/app/src/main/res/mipmap-anydpi-v26/ic_camera_test2.xml" value="0.22135416666666666" />
       </map>
     </option>
   </component>
