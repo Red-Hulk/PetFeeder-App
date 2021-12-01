@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterActivity">
+
+    <TextView
+        android:id="@+id/register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Registeren"
+        android:textSize="@dimen/text_size_title"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/register_username_title"
+        style="@style/username_title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gebruikersnaam"
+        app:layout_constraintEnd_toEndOf="@+id/register_username_edt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/register_username_edt"
+        app:layout_constraintTop_toBottomOf="@+id/register_title" />
+
+    <EditText
+        android:id="@+id/register_username_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_username_title" />
+
+    <EditText
+        android:id="@+id/register_password_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_password_title" />
+
+    <EditText
+        android:id="@+id/register_password_confirm_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_password_confirm_title" />
+
+    <TextView
+        android:id="@+id/register_password_title"
+        style="@style/username_title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Wachtwoord"
+        app:layout_constraintEnd_toEndOf="@+id/register_password_edt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/register_password_edt"
+        app:layout_constraintTop_toBottomOf="@+id/register_username_edt" />
+
+    <TextView
+        android:id="@+id/register_password_confirm_title"
+        style="@style/username_title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Bevestig Wachtwoord"
+        app:layout_constraintEnd_toEndOf="@+id/register_password_confirm_edt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/register_password_confirm_edt"
+        app:layout_constraintTop_toBottomOf="@+id/register_error_message_passwrd" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Registeren"
+        app:layout_constraintEnd_toEndOf="@+id/register_password_confirm_edt"
+        app:layout_constraintStart_toStartOf="@+id/register_password_confirm_edt"
+        app:layout_constraintTop_toBottomOf="@+id/register_error_message_confirm_passwrd" />
+
+    <Button
+        android:id="@+id/register_llogin_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Inloggen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/register_btn"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/register_btn"
+        app:layout_constraintTop_toBottomOf="@+id/register_btn"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <TextView
+        android:id="@+id/register_error_message_passwrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/error_message"
+        app:layout_constraintEnd_toEndOf="@+id/register_password_edt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/register_password_edt"
+        tools:layout_editor_absoluteY="378dp" />
+
+    <TextView
+        android:id="@+id/register_error_message_confirm_passwrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/error_message"
+        app:layout_constraintEnd_toEndOf="@+id/register_password_confirm_edt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/register_password_confirm_edt"
+        app:layout_constraintTop_toBottomOf="@+id/register_password_confirm_edt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

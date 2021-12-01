@@ -21,16 +21,13 @@
 
     <TextView
         android:id="@+id/login_username_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
         android:text="Gebruikersnaam"
-        android:textSize="@dimen/login_inputbox_title_text_size"
         app:layout_constraintBottom_toTopOf="@+id/login_username_edt"
         app:layout_constraintEnd_toEndOf="@+id/login_username_edt"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/login_username_edt"
-        app:layout_constraintTop_toBottomOf="@+id/login_title" />
+        app:layout_constraintTop_toBottomOf="@+id/login_title"
+        style="@style/username_title_style" />
 
     <TextView
         android:id="@+id/login_password_text"
@@ -74,12 +71,12 @@
         android:id="@+id/login_btn_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
         android:text="Inloggen"
         app:layout_constraintEnd_toEndOf="@+id/login_password_edt"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/login_password_edt"
-        app:layout_constraintTop_toBottomOf="@+id/login_password_edt" />
+        app:layout_constraintTop_toBottomOf="@+id/login_error_message" />
 
     <Button
         android:id="@+id/login_btn_register"
@@ -96,6 +93,7 @@
         android:id="@+id/login_register_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="Geen account?"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/login_btn_register"
@@ -104,5 +102,15 @@
         app:layout_constraintStart_toStartOf="@+id/login_btn_register"
         app:layout_constraintTop_toBottomOf="@+id/login_btn_login"
         app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/login_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/error_message"
+        app:layout_constraintEnd_toEndOf="@+id/login_password_edt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/login_password_edt"
+        app:layout_constraintTop_toBottomOf="@+id/login_password_edt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
