@@ -1,24 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feed_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/firstFragment"
+        android:id="@+id/feed_title"
+        style="@style/titles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FeedTime"
-        android:textColor="#43a047"
-        android:textSize="40sp"
-        android:textStyle="italic|bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Voer Tijden" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<!--    <ScrollView-->
+<!--        android:id="@+id/feed_scrollContainer"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/feed_title">-->
+
+        <TextView
+            android:id="@+id/feed_automatic_title"
+            style="@style/username_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feed_title"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Automatische Tijden" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/feed_recView_automatic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feed_automatic_title"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp" />
+
+        <ToggleButton
+            android:id="@+id/feed_automatic_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/feed_recView_automatic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#ff5544" />
+
+        <TextView
+            android:id="@+id/feed_today_title"
+            style="@style/username_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feed_automatic_btn"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Vandaag" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/feed_recView_today"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feed_today_title"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp" />
+
+        <TextView
+            android:id="@+id/feed_earlier_title"
+            style="@style/username_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feed_recView_today"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Earlier" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/feed_recView_earlier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feed_earlier_title"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp" />
+
+<!--    </ScrollView>-->
+
+
+</RelativeLayout>
